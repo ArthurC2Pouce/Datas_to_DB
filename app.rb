@@ -1,11 +1,7 @@
 require 'bundler'
 Bundler.require
-$:.unshift File.expand_path('./../lib/app', __FILE__)
-require'scrapper'
 
+$:.unshift File.expand_path("./../lib/", __FILE__)
+require 'views/index'
 
-
-Scrapper.new
-
-
-
+Index.new
